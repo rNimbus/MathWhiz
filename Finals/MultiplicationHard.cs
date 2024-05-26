@@ -1,0 +1,161 @@
+﻿
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
+using Finals;
+using System.Media;
+
+namespace Finals
+{
+	/// <summary>
+	/// Description of MultiplicationHard.
+	/// </summary>
+	public partial class MultiplicationHard : Form
+	{
+		public User currentUser;
+		public List<User> users;
+		public const string UsersFilePath = @"C:\Users\User\Documents\MathWhiz.json";
+		public Random random;
+		public int score = 0;
+		public int scoreLimit = 100;
+		public int changeTime = 20;
+
+		public string gameMode = "Multiplication";
+		public string difficulty = "Hard";
+
+		public SoundPlayer rightAns = new SoundPlayer(@"C:\Users\User\Downloads\success_02-68338 (1).wav");
+		public SoundPlayer wrongAns = new SoundPlayer(@"C:\Users\User\Downloads\wronganswer-37702.wav");
+
+		public MultiplicationHard(User user, List<User> userList, string difficulty)
+		{
+			
+			InitializeComponent();
+			random = new Random();
+			currentUser = user;
+			users = userList;
+			RandomGen();
+		}
+
+        
+
+        void Button1Click(object sender, EventArgs e)
+		{
+			ValidateAnswer();
+			txbAnswer.Focus();
+		}
+		
+		void TxbAnswerKeyDown(object sender, KeyEventArgs e)
+		{
+			if(e.KeyCode == Keys.Enter){
+				ValidateAnswer();
+				e.SuppressKeyPress = true;
+			}
+		}
+		public void ValidateAnswer(){
+			string correctAnswer = lblAnswer.Text;
+		    string userAnswer = txbAnswer.Text;
+		
+		    if (correctAnswer == userAnswer)
+		        {
+					rightAns.Play();
+		            RandomGen();
+		        	txbAnswer.ResetText();
+		        	ScoreAdd();
+		        	lblTimer.Text = Convert.ToString(changeTime);
+		        }
+		        else
+		        {
+					wrongAns.Play();
+		            txbAnswer.ResetText();
+		        }
+		}
+		public void RandomGen(){
+			
+			
+            int num1val = random.Next(11, 99);
+	        lblNum1.Text = num1val.ToString();
+	
+	        int num2val = random.Next(11, 99);
+	        lblNum2.Text =num2val.ToString();
+	
+	        int answer = num1val * num2val;
+	        lblAnswer.Text = answer.ToString();
+					
+			
+		}
+		
+		public void ScoreAdd(){
+			int prevLimit = 0;
+			int addto = scoreLimit/10;
+			if(score<scoreLimit && score>=prevLimit){
+				int addScore = addto + score ;
+				lblScore.Text= Convert.ToString(addScore);
+				score = addScore;
+			}
+			
+			if (score >= scoreLimit){
+					prevLimit= prevLimit+ scoreLimit;
+					scoreLimit= scoreLimit + 100;
+					
+					if (changeTime>3){
+						changeTime = changeTime - 1;
+					}
+				}
+			
+			
+		}
+		
+		void TimerEasyTick(object sender, EventArgs e)
+		{
+			switch (lblTimer.Text) {
+				case "20" :lblTimer.Text ="19"; break;
+				case "19" :lblTimer.Text ="18"; break;
+				case "18" :lblTimer.Text ="17"; break;
+				case "17" :lblTimer.Text ="16"; break;
+				case "16" :lblTimer.Text ="15"; break;	
+				case "15" :lblTimer.Text ="14"; break;
+				case "14" :lblTimer.Text ="13"; break;	
+				case "13" :lblTimer.Text ="12"; break;	
+				case "12" :lblTimer.Text ="11"; break;	
+				case "11" :lblTimer.Text ="10"; break;	
+				case "10" :lblTimer.Text ="9"; break;
+				case "9" :lblTimer.Text ="8"; break;
+				case "8" :lblTimer.Text ="7"; break;
+				case "7" :lblTimer.Text ="6"; break;
+				case "6" :lblTimer.Text ="5"; break;
+				case "5" :lblTimer.Text ="4"; break;
+				case "4" :lblTimer.Text ="3"; break;
+				case "3" :lblTimer.Text ="2"; break;
+				case "2" :lblTimer.Text ="1"; break;
+				case "1" :lblTimer.Text ="0"; break;
+			}
+			if (lblTimer.Text == "0"){
+				TimerEasy.Stop();
+				SaveHighScore();
+				Result result = new Result(currentUser, users, gameMode, difficulty, score);
+				result.Show();
+				Close();
+			}
+		}
+		
+		private void SaveHighScore()
+		{
+			if (!currentUser.HighScores.ContainsKey("Addition") ||
+					!currentUser.HighScores["Addition"].ContainsKey(difficulty) ||
+					score > currentUser.HighScores["Addition"][difficulty])
+			{
+				currentUser.HighScores["Addition"][difficulty] = score;
+				SaveUsers();
+			}
+		}
+
+		private void SaveUsers()
+		{
+			string json = JsonConvert.SerializeObject(users, Formatting.Indented);
+			File.WriteAllText(UsersFilePath, json);
+		}
+	}
+}

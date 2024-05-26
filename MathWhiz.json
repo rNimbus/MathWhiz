@@ -1,0 +1,366 @@
+[
+  {
+    "Username": "testuser1",
+    "Password": "password123",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "testuser2",
+    "Password": "password456",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "andrei122",
+    "Password": "12345",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "Andrei21",
+    "Password": "andrei123",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "user1",
+    "Password": "qwer",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "1",
+    "Password": "1",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "12345678",
+    "Password": "12345678",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "andreiromulo",
+    "Password": "andreiromulo",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "andrei123",
+    "Password": "andrei123",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "andrei12345",
+    "Password": "andrei12345",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "lods1234",
+    "Password": "lods1234",
+    "HighScores": {
+      "Addition": {
+        "Easy": 760,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "andrei0987",
+    "Password": "andrei0987",
+    "HighScores": {
+      "Addition": {
+        "Easy": 10,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "lods12345",
+    "Password": "lods12345",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  },
+  {
+    "Username": "123456789",
+    "Password": "12345678",
+    "HighScores": {
+      "Addition": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Subtraction": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Multiplication": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      },
+      "Division": {
+        "Easy": 0,
+        "Average": 0,
+        "Hard": 0
+      }
+    }
+  }
+]
