@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C042570C-8849-47BE-BD1F-0148F21A2C89}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Finals</RootNamespace>
+    <AssemblyName>Finals</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionAverage.Designer.cs">
+      <DependentUpon>AdditionAverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdditionEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionEasy.Designer.cs">
+      <DependentUpon>AdditionEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdditionHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionHard.Designer.cs">
+      <DependentUpon>AdditionHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DifficultiesGM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DifficultiesGM2.Designer.cs">
+      <DependentUpon>DifficultiesGM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Difficuties&amp;ChoicesGM1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Difficuties&amp;ChoicesGM1.Designer.cs">
+      <DependentUpon>Difficuties&amp;ChoicesGM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivisionAverage.Designer.cs">
+      <DependentUpon>DivisionAverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivisionEasy.Designer.cs">
+      <DependentUpon>DivisionEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivisionHard.Designer.cs">
+      <DependentUpon>DivisionHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameModes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameModes.Designer.cs">
+      <DependentUpon>GameModes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScoreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighScoreList.Designer.cs">
+      <DependentUpon>HighScoreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HowToPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowToPlay.Designer.cs">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplicationAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplicationAverage.Designer.cs">
+      <DependentUpon>MultiplicationAverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplicationEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplicationEasy.Designer.cs">
+      <DependentUpon>MultiplicationEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplicationHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplicationHard.Designer.cs">
+      <DependentUpon>MultiplicationHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubtractionAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubtractionAverage.Designer.cs">
+      <DependentUpon>SubtractionAverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubtractionEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubtractionEasy.Designer.cs">
+      <DependentUpon>SubtractionEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubtractionHArd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubtractionHArd.Designer.cs">
+      <DependentUpon>SubtractionHArd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdditionAverage.resx">
+      <DependentUpon>AdditionAverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdditionEasy.resx">
+      <DependentUpon>AdditionEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdditionHard.resx">
+      <DependentUpon>AdditionHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DifficultiesGM2.resx">
+      <DependentUpon>DifficultiesGM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Difficuties&amp;ChoicesGM1.resx">
+      <DependentUpon>Difficuties&amp;ChoicesGM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivisionAverage.resx">
+      <DependentUpon>DivisionAverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivisionEasy.resx">
+      <DependentUpon>DivisionEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivisionHard.resx">
+      <DependentUpon>DivisionHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameModes.resx">
+      <DependentUpon>GameModes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighScoreList.resx">
+      <DependentUpon>HighScoreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowToPlay.resx">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplicationAverage.resx">
+      <DependentUpon>MultiplicationAverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplicationEasy.resx">
+      <DependentUpon>MultiplicationEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplicationHard.resx">
+      <DependentUpon>MultiplicationHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubtractionAverage.resx">
+      <DependentUpon>SubtractionAverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubtractionEasy.resx">
+      <DependentUpon>SubtractionEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubtractionHArd.resx">
+      <DependentUpon>SubtractionHArd.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
